@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    height: fit-content;
+}
+
+.div-header{
+    display: flex;
+    justify-content: space-around;
+    
+}
+h1{
+    text-align: center;
+    padding: 12px 0px;
+    font-size: 70px;
+}
+.logo-img{
+    width: 190px;
+    height: 130px;
+    
+}
+.banner-img{
+    height: 130px;
+    width: 100%;
+}
+.ul-menu li{
+    display: inline-block;
+    
+}
+.nav-menu{
+    text-align: right;
+}
+.link-menu{
+    padding: 15px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+.ul-menu{
+    padding: 15px 32px 15px 0px; 
+    background-color: rgb(109, 195, 216,0.3);
+    border-bottom: 1px solid black;
+}
+.link-menu:hover{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    transition: 550ms;
+}
+
+.main{
+    justify-content: center;
+}
+.tarjetas{ /*configuracion grilla main index*/
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 40% 40%;
+    grid-template-areas: "a a"
+                         "b c";
+    column-gap: 20px;
+    row-gap: 20px;  
+    justify-items: center;
+    justify-content: center;
+    background-color: rgb(109, 195, 216,0.3);
+    
+}
+
+/*posisionamiento en la grilla de las tarjetas del main index*/
+.div-relax{
+    grid-area: a;
+    width: 70%;
+    height: 100%;
+}
+.div-disf{
+    grid-area: c;
+    width: 100%;
+    height: fit-content;
+}
+.div-conoce{
+    grid-area: b;
+    width: 100%;
+    height: 100%;
+}/*fin posicionamiento*/
+
+.tarjetas div{
+    display: inline-block;
+    text-align: center;
+    padding: 0px 0px;   
+    font-size: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: rgb(255, 255, 255);
+   
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.tarjetas img{ /*imagenes del MAIN*/
+    width:  50%;
+    height: 40%;
+    border-radius: 15px;
+}
+.tarjetas div p{
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.tarjetas div h2{
+    color: rgb(74, 109, 204);
+    padding: 10px 0px;
+}
+.footer{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: bisque;
+}
+
+.nav-icon{
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    margin-right: 25px;
+}
+
+.div-footer{
+    width: 10%;
+    height: 100%;
+    margin: 0px 15px;
+}
+
+.footer img{
+    width: 30px;
+    height: 30px;   
+    
+}
+.h4{
+    width: 100%;
+    display: inline-block;
+    margin-left: 15px;
+}
+.nav-icon img:hover{
+    background-color: rgb(197, 178, 178);
+}
+/*EMPIEZA SECCION ACTIVIDADES*/
+.main-actividades{
+    display: flex;
+    background-color: rgb(109, 195, 216,0.3);
+    height: 800px;
+    justify-content: space-evenly; 
+    
+}
+.main-actividades div{
+    height: 650px;
+   
+    display: inline-block;
+    text-align: center;
+    padding: 0px 0px;
+    margin: 15px 0px;
+    width:25%;
+    font-size: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: rgb(255, 255, 255);
+   
+   
+    
+    
+}
+.main-actividades p{
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.main-actividades h3{
+    color: rgb(74, 109, 204);
+    padding: 10px 0px;
+}
+.main-actividades img{
+    width: 50%;
+    border-radius: 15px;
+}
+.img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;   
+    padding: 20px 5px;
+    width: 15%;
+}
+
+.main-galeria{
+    background-color: rgb(109, 195, 216,0.3);   
+}
+.data{
+    border: 1px solid black;
+    width: fit-content;
+    padding: 15px;
+}
+form{
+    padding: 20px;
+    
+    
+    align-items: center;
+}
+.contact-local{
+    display: flex;
+    background-color: rgb(135, 135, 173);
+    
+    justify-content: space-evenly;
+}
+legend{
+    font-size: 35px;
+    text-decoration:underline ;
+    margin-left: 15px;
+}
+.data{
+    font-family: Verdana;
+    margin: 15px 35px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    align-items: center;
+    
+    
+    
+}
+.title-area{
+    font-size: 15px;
+}
+
+div{
+    border: 2px dashed blue;
+}
